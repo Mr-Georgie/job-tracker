@@ -1,0 +1,496 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  /* font-family: 'Inter', sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background: #F4F5F9;
+
+}
+
+/*-------- Left Sidebar Style -----------*/
+.left-sidebar {
+  height: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: .5s;
+  padding-top: 15px;
+  border-right: 1px solid rgb(243, 239, 239);
+  background: #fff;
+}
+
+.left-sidebar-items .logo {
+  padding-bottom: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px; 
+}
+
+
+.left-sidebar-items .logo:hover {
+  padding-bottom: 20px;
+  color: black;
+  background: none;
+}
+
+.left-sidebar-items a{
+  padding: 20px 21px;
+  text-decoration: none;
+  color: black;
+  display: block;
+  transition: 0.3s;
+  margin-bottom: 20px;
+  /* font-weight: bold; */
+  border-radius: 2267px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+.left-sidebar-items a:hover {
+color: #fff;
+background: rgb(214, 212, 212);
+}
+
+.left-sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+margin-left: 50px;
+cursor: pointer;
+}
+
+.left-sidebar-items .btn {
+  padding: 20px 21px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background: #1DA1F2;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2267px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.left-sidebar-items .btn:hover {
+/* padding-bottom: 20px; */
+color: #ffff;
+background: #0a75b8;
+}
+
+/*---------- Left Sidebar Style ends --------*/
+
+/*---------- MainContent and Navbar Style -----------*/
+.main-content-area {
+  transition: margin-left .5s;
+}
+
+.main-content-area > span {
+  cursor: pointer;
+}
+
+.app-container {
+  max-width: 1150px;
+  margin: 0 auto; /* center block element */
+  display: flex;
+  flex-direction: column;    
+}
+
+.navbar {
+  background: #fff;
+  /* padding: 20px; */
+}
+
+.navbar .brand, .navbar .right-nav-item {
+  display: flex;
+  align-items: center;
+}
+
+.right-nav-item .profile {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .brand button {
+  background: none;
+  border: none;
+}
+
+.navbar .brand button:focus {
+  border: none;
+  outline: none;
+}
+
+.navbar .brand a{
+  text-decoration: none;
+  color: #000000;
+}
+
+.navbar .profile{
+  border-left: 1px solid rgb(216, 209, 209);
+  padding-top: 8px;
+}
+
+.navbar .custom-searchbar {
+  background: #F9FBFF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  /* color: black; */
+  color: #7E7E7E;
+}
+
+.navbar .searchbar input {
+  background: #F9FBFF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  /* color: black; */
+  color: #7E7E7E;
+  border: 1px solid #1473E6;
+}
+
+.navbar .searchbar input:focus {
+  color: #1473E6;
+}
+
+.navbar .profile .sign-in {
+  font-size: 25px;
+}
+
+.navbar .profile .sign-in:focus {
+  color: #6495f5;
+  outline: none;
+  border: none;
+}
+
+/* navbar offcanvas */
+.offcanvas {
+  transition: 0.3s;
+}
+
+.offcanvas .logo {
+  padding: 20px;
+  color: black;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px; 
+}
+/*---------- MainContent and Navbar Style ends -----------*/
+
+/*---------- SubComponents Style -----------*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  margin-top: 30px;
+}
+
+.header > .text {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #000000;
+}
+
+.header select {
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: black;
+  background: #ffff;
+}
+
+.header select:focus {
+  color: black;
+  border: 1px solid black;
+}
+
+/* table */
+.table {
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  padding: 31px 63px;
+}
+
+.table-head {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.table .table-head > * {
+  flex: 0 1 auto;
+}
+
+.table-head .number > span {
+  color: #2985f5;
+  border: 2px solid #2985f5;
+  border-radius: 5px;
+  padding: 4px 10px;
+}
+
+.table-head .number{
+  flex-grow: 1;
+  /* padding-right: 20px; */
+  border-right: 1px solid rgb(216, 209, 209);
+}
+
+.table-head .name{
+  flex-grow: 2;
+  padding-left: 60px;
+}
+
+.table-head .metrics{
+  flex-grow: 2;
+}
+
+.table-head .button{
+  flex-grow: 5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.table-head button {
+  background: #F9FBFF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  color: #7E7E7E;
+}
+
+.table-head button:focus {
+  color: #1473E6;
+  border: 1px solid #1473E6;
+}
+
+.table-head button span {
+  padding: 10px 15px;
+}
+
+.table-body {
+  margin-top: 30px;
+  transition: 0.3s;
+}
+
+.table-body > * + * {
+  border-top: 1px solid rgb(216, 209, 209);
+}
+
+.table-body .component {
+  padding: 10px 0px;
+  display: flex;
+}
+
+.table-body .component i {
+  /* color: #2985f5; */
+  color: #98bdee;
+  font-size: 1.5rem;
+}
+
+.table-body .component .title {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  color: #2C2C2C;
+  padding-right: 35px;
+  padding-left: 10px;
+}
+
+.table-body .component .metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 5px;
+}
+
+.table-body .component .metrics p{
+  background: #FEE5DD;
+  border-radius: 4px;
+  padding: 5px;
+  display: flex;
+  gap: 5px;
+}
+
+.table-body .component .metrics span {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #FC5569;
+}
+
+.table-body .component .metrics .count {
+  font-weight: bold;
+}
+/*---------- SubComponents Style ends -----------*/
+/*---------- User Specific Styles -----------*/
+.spinners {
+  display: flex;
+  margin: 150px;
+  width: 560px; 
+  height: 560px;
+}
+/*---------- User Specific ends -----------*/
+
+/*---------- User Jobs Styles -----------*/
+.jobs-table {
+  background: white;
+  margin-top: 20px;
+  padding: 15px 10px;
+}
+
+.jobs-table .table {
+  box-shadow: none;
+  background: #ffffff;
+}
+
+.jobs-table .buttons > * {
+  padding-left: 5px;
+}
+
+.jobs-table .btn-green {
+  background: #6FCF97;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+
+  padding: 8px 16px;
+}
+
+.jobs-table .btn-green:hover, .jobs-table .btn-green:focus{
+  background: #388357;
+  color: white;
+}
+
+.jobs-table .btn-orange {
+  background: #FA976C;
+  color: white;
+  border-radius: 4px;
+  border: none;
+  outline: none;
+
+  padding: 8px 16px;
+}
+
+.jobs-table .btn-orange:hover, .jobs-table .btn-orange:focus{
+  background: #ac6647;
+  color: white;
+}
+
+/*---------- User Jobs Styles ends -----------*/
+
+/*---------- User Job Details Styles -----------*/
+
+.job-container {
+  margin-top: 25px;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  padding: 31px 63px;
+}
+
+.job-container .custom-btn {
+  padding: 12px 12px;
+  margin-left: 30px;
+  margin-right: 30px;
+  background: #1DA1F2;
+  color: #ffff;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2267px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-container .custom-btn:hover {
+  color: #ffff;
+  background: #0a75b8;
+}
+
+.job-container .btn-danger {
+  padding: 12px 12px;
+  margin-left: 30px;
+  margin-right: 30px;
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2267px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.job-container form input, .job-container form select {
+  background: #F9FBFF;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+
+  font-weight: 400;
+  /* font-size: 12px; */
+  line-height: 18px;
+  letter-spacing: -0.01em;
+  /* color: black; */
+  color: #7E7E7E;
+}
+
+.job-container form input:focus, .job-container form select:focus {
+  /* color: #1473E6; */
+  border: 1px solid #1473E6;
+  outline: none;
+}
+
+/*---------- User Job Details Styles end -----------*/
+/*---------- Jobs Ads Styles -----------*/
+.job-ads {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 10px 60px rgba(226, 236, 249, 0.5);
+  padding: 31px 63px;
+}
+
+/*---------- Jobs Ads Styles ends -----------*/
+
+

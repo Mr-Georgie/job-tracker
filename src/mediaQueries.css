@@ -1,0 +1,39 @@
+/* for small screens */
+.app-container {
+    padding: 45px 20px;
+}
+
+.display {
+    display: block;
+}
+  
+.left-sidebar {
+    display: none;
+}
+  
+.main-content-area ,.navbar {
+    margin-left: 0px;
+}
+
+
+/* small screen ends */
+
+
+/* media queries */
+@media screen and (min-width: 991px) {
+  .app-container {
+    padding: 45px 65px;
+  }
+
+  .display {
+    display: none;
+  }
+
+  .left-sidebar {
+    display: block;
+    width: 300px;
+  }
+  .main-content-area ,.navbar {
+    margin-left: 300px;
+  }
+}
