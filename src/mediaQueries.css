@@ -19,7 +19,8 @@
 /* small screen ends */
 
 
-/* media queries */
+/* media queries for other screens start */
+
 @media screen and (min-width: 991px) {
   .app-container {
     padding: 45px 65px;
