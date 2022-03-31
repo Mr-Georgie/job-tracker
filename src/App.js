@@ -5,7 +5,7 @@ import MainContent from './Components/MainContent'
 
 import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 
-const frontendApi = process.env.REACT_APP_CLERK_FRONTEND_API
+const frontendApi = "clerk.together.yak-5.lcl.dev"
 
 function App() {
 
