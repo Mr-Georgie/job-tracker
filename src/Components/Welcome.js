@@ -20,7 +20,7 @@ export default function Welcome() {
 			<div className="wrap-login100">
 				<form className="login100-form validate-form">
 					<span className="login100-form-title p-b-26">
-						Welcome to <br/> Job Tracker
+						Welcome to <br/> <span className="text-primary">JobTracker</span>
 					</span>
 					<span className="login100-form-title p-b-48">
 						<i className="zmdi zmdi-font"></i>
