@@ -10,7 +10,6 @@ import UserJobDetails from './Pages/UserJobDetails'
 import DeleteUserJob from './Pages/DeleteUserJob'
 
 import { Switch, Route } from "react-router-dom";
-import { SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
 
 import {useSubscription} from '@apollo/client'
 import {getJobs} from '../GraphQL' 
@@ -50,8 +49,6 @@ export default function MainContent() {
         isUserSearching={isUserSearching}
       />
       <div className="main-content app-container">
-
-      <SignedIn>
         {
           isUserSearching ? 
           <UserJobs 
@@ -85,12 +82,8 @@ export default function MainContent() {
               </Route>
           </Switch>
         }
-      </SignedIn>
-      </div>
 
-      <SignedOut>
-        <RedirectToSignIn />
-      </SignedOut>
+      </div>
     </div>
   )
 }

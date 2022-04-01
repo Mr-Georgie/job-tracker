@@ -27,7 +27,7 @@ export default function DeleteUserJob(props) {
     const handleSubmit =  async (event) => {
         event.preventDefault()
         
-        const hasuraToken = await session.getToken({template: "hasura"})
+        const hasuraToken = await session.getToken({template: "job-tracker-hasura"})
 
         fetch("https://job-tracker.hasura.app/v1/graphql", {
             method: "POST",
