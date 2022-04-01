@@ -4,10 +4,9 @@ import Welcome from "./Components/Welcome";
 import LeftSidebar from './Components/LeftSidebar'
 import MainContent from './Components/MainContent'
 
-import { ClerkProvider, SignedIn, SignedOut, RedirectToSignIn } from '@clerk/clerk-react';
+import { ClerkProvider, SignedIn, SignedOut } from '@clerk/clerk-react';
 
 const frontendApi = "clerk.together.yak-5.lcl.dev"
-// const frontendApi = "clerk.enhanced.goblin-74.lcl.dev"
 
 function App() {
 
