@@ -15,6 +15,62 @@
     margin-left: 0px;
 }
 
+/* reduce font-sizes for small screens */
+.left-sidebar-items .logo {
+  font-size: 15px; 
+}
+
+.left-sidebar-items .btn {
+  font-size: 15px;
+}
+
+.navbar .custom-searchbar {
+  font-size: 9px;
+}
+
+.navbar .searchbar input {
+  font-size: 9px;
+}
+
+.navbar .profile .sign-in {
+  font-size: 22px;
+}
+
+.offcanvas .logo {
+  font-size: 15px; 
+}
+
+.header > .text {
+  font-size: 20px;
+}
+
+.header select {
+  font-size: 9px;
+}
+
+.table-head button {
+  font-size: 9px;
+}
+
+.table-body .component i {
+  font-size: 1.2rem;
+}
+
+.table-body .component .title {
+  font-size: 15px;
+}
+
+.table-body .component .metrics span {
+  font-size: 11px;
+}
+
+.job-container .custom-btn {
+  font-size: 15px;
+}
+
+.job-container .btn-danger {
+  font-size: 15px;
+}
 
 /* small screen ends */
 
@@ -37,4 +93,62 @@
   .main-content-area ,.navbar {
     margin-left: 300px;
   }
+
+  .left-sidebar-items .logo {
+    font-size: 18px; 
+  }
+
+  .left-sidebar-items .btn {
+    font-size: 18px;
+  }
+
+  .navbar .custom-searchbar {
+    font-size: 12px;
+  }
+
+  .navbar .searchbar input {
+    font-size: 12px;
+  }
+
+  .navbar .profile .sign-in {
+    font-size: 25px;
+  }
+  
+  .offcanvas .logo {
+    font-size: 18px; 
+  }
+
+  .header > .text {
+    font-size: 24px;
+  }
+
+  .header select {
+    font-size: 12px;
+  }
+
+  .table-head button {
+    font-size: 12px;
+  }
+
+  .table-body .component i {
+    font-size: 1.5rem;
+  }
+
+  .table-body .component .title {
+    font-size: 18px;
+  }
+  
+  .table-body .component .metrics span {
+    font-size: 14px;
+  }
+
+  .job-container .custom-btn {
+    font-size: 18px;
+  }
+
+  .job-container .btn-danger {
+    font-size: 18px;
+  }
+
+
 }
