@@ -11,6 +11,19 @@ export default function User(props) {
   // will hold the final fitered data after logic
   const filteredData = []
 
+  // Just incase the doesn't have any save job
+  if (props.data.length === 0){
+    return (
+      <>
+        <Header 
+            // handleChange={handleChange}
+            goingTo={"userPage"}
+        />
+        <span><p className="fw-lighter text-muted">Oops! You have no saved jobs to show stats for. Please add a job to see stats</p></span>
+      </>
+    )
+  }
+
   // get the names of all columns in database from the first object 
   // since all objects in our array of objects has the same keys
   // exclude the "id", "user_id" and "additional_tech" columns
