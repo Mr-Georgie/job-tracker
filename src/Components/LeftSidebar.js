@@ -6,7 +6,9 @@ export default function LeftSidebar() {
   return (
     <div className="left-sidebar">
       <div className="left-sidebar-items">
-        <a href="/" className="logo">JobTracker</a>
+        <a href="/" className="logo">
+          JobTracker
+        </a>
         <Link to="/" className="links">
           <i className="bi bi-people me-3"></i>
           All Users Stats

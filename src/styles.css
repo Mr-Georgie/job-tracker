@@ -265,7 +265,7 @@ background: #0a75b8;
 
 .table-head .name{
   flex-grow: 2;
-  padding-left: 60px;
+  padding-left: 30px;
 }
 
 .table-head .metrics{
@@ -329,6 +329,7 @@ background: #0a75b8;
   padding-right: 35px;
   padding-left: 10px;
 }
+
 
 .table-body .component .metrics {
   display: flex;

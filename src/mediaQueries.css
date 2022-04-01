@@ -21,7 +21,7 @@
 }
 
 .left-sidebar-items .btn {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .navbar .custom-searchbar {
@@ -33,7 +33,11 @@
 }
 
 .navbar .profile .sign-in {
-  font-size: 22px;
+  font-size: 15px;
+}
+
+.navbar .profile span{
+  font-size: 13px;
 }
 
 .offcanvas .logo {
@@ -41,7 +45,7 @@
 }
 
 .header > .text {
-  font-size: 20px;
+  font-size: 17px;
 }
 
 .header select {
@@ -57,7 +61,7 @@
 }
 
 .table-body .component .title {
-  font-size: 15px;
+  font-size: 13px;
 }
 
 .table-body .component .metrics span {
@@ -92,6 +96,17 @@
   }
   .main-content-area ,.navbar {
     margin-left: 300px;
+  }
+
+  .table-head .name{
+    flex-grow: 2;
+    padding-left: 30px;
+  }
+
+  .table-head {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
   }
 
   .left-sidebar-items .logo {

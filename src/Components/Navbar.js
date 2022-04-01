@@ -1,10 +1,9 @@
 import React from 'react'
 
-import {UserButton, useUser} from '@clerk/clerk-react'
+import { UserButton, useUser } from '@clerk/clerk-react'
 import { Link } from 'react-router-dom'
 
 export default function Navbar(props) {
-
   const { user } = useUser()
 
   function getInput(event) {
@@ -25,17 +24,23 @@ export default function Navbar(props) {
             >
               <span>&#9776;</span>
             </button>
-            <Link to="/" className="link"> Home </Link>
+            <Link to="/" className="link">
+              {' '}
+              Home{' '}
+            </Link>
           </div>
           <div className="right-nav-item">
             <span className="searchbar me-3">
-              { !props.isUserSearching && 
-                <span className="custom-searchbar" onClick={() => props.showJobsTable()}>
+              {!props.isUserSearching && (
+                <span
+                  className="custom-searchbar"
+                  onClick={() => props.showJobsTable()}
+                >
                   <span>Search for job roles, etc.</span>
-                  <i className="bi bi-search ps-3"></i> 
-                </span>  
-              }
-              { props.isUserSearching && 
+                  <i className="bi bi-search ps-3"></i>
+                </span>
+              )}
+              {props.isUserSearching && (
                 <span>
                   <input
                     type="text"
@@ -43,14 +48,15 @@ export default function Navbar(props) {
                     onChange={getInput}
                     value={props.inputText}
                   />
-                  <i className="bi bi-x-lg ps-3" onClick={() => props.showJobsTable()}></i>
+                  <i
+                    className="bi bi-x-lg ps-3"
+                    onClick={() => props.showJobsTable()}
+                  ></i>
                 </span>
-              }
+              )}
             </span>
             <span className="profile ps-3">
-              <span className="pe-2"> 
-                { `Hello, ${user.firstName}` }
-              </span>
+              <span className="pe-2">{`Hello, ${user.firstName}`}</span>
               <span>
                 <UserButton />
               </span>

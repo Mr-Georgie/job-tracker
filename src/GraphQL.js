@@ -1,5 +1,5 @@
 // CRUD graphql queries for my hasura backend
-import {gql} from '@apollo/client'
+import { gql } from '@apollo/client'
 
 // CREATE
 export const addJob = `
@@ -30,20 +30,20 @@ export const addJob = `
 
 // READ
 export const getJobs = gql`
-    subscription Jobs {
-        jobs {
-        id
-        experience
-        role
-        job_type
-        additional_tech
-        location
-        price_range
-        number_hiring
-        technology
-        user_id
-        }
-    } 
+  subscription Jobs {
+    jobs {
+      id
+      experience
+      role
+      job_type
+      additional_tech
+      location
+      price_range
+      number_hiring
+      technology
+      user_id
+    }
+  }
 `
 
 // UPDATE
@@ -72,4 +72,3 @@ export const deleteJob = `
         }
     }
 `
-
